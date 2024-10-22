@@ -3,7 +3,7 @@
 
 ### 使用教程
 启动 RmiDemoApplication 网页<br>
-启动index文件出现下方页面
+输入localhost:8090/index打开网页
 ![img_1.png](img_1.png)
 点击图中按钮出现
 ![img.png](img.png)

@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>RMI</title>
 </head>
 <script>
-    async function fetchHello() {
+    async function fetchMessage() {
         try {
             const response = await fetch('http://localhost:8090/hello');
             if (!response.ok) {
@@ -20,8 +20,8 @@
 
 </script>
 <body>
-<h1>欢迎使用 RMI 服务</h1>
-<button onclick="fetchHello()">获取问候</button>
+<h1>这是我的 RMI 服务Demo</h1>
+<button onclick="fetchMessage()">点击获取Hello</button>
 <div id="result"></div>
 </body>
 </html>
