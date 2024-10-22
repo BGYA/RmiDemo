@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<script>
+    async function fetchHello() {
+        try {
+            const response = await fetch('http://localhost:8090/hello');
+            if (!response.ok) {
+                throw new Error('Network response was not ok, status: ' + response.status);
+            }
+            document.getElementById('result').innerText = await response.text();
+        } catch (error) {
+            console.error('Error fetching greeting:', error);
+            document.getElementById('result').innerText = '请求失败: ' + error.message;
+        }
+    }
+
+</script>
+<body>
+<h1>欢迎使用 RMI 服务</h1>
+<button onclick="fetchHello()">获取问候</button>
+<div id="result"></div>
+</body>
+</html>

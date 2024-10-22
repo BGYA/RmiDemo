@@ -9,6 +9,7 @@ public class RmiDemoApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(RmiDemoApplication.class, args);
 		RmiServerInitializer.init();
+
 	}
 
 }
